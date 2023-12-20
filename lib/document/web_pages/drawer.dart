@@ -17,11 +17,8 @@ class _DrawerviewState extends State<Drawerview> {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          const DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
-            child: Text('Drawer Header'),
+          DrawerHeader(
+            child: Image.asset("assets/centralogic.png"),
           ),
           ListTile(
             title: const Text('Home'),
@@ -29,7 +26,6 @@ class _DrawerviewState extends State<Drawerview> {
           ),
           ListTile(
             hoverColor: Colors.blue,
-            
             title: const Text('Documents'),
             onTap: () {
               Navigator.push(
